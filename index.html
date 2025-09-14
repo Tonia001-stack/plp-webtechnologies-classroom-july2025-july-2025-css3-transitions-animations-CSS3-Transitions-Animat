@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- PART 1: CSS Transitions and Animations -->
+    <section class="part1">
+        <h1>Part 1: CSS Animations</h1>
+        <button class="hover-btn">Hover Me!</button>
+        <div class="fade-box">Fade Animation</div>
+        <div class="pulse-circle"></div>
+    </section>
+
+    <!-- PART 2 & 3: JavaScript + CSS Integration -->
+    <section class="part2-3">
+        <h2>Part 2 & 3: JavaScript + CSS</h2>
+        
+        <div class="animated-box" id="box">Click buttons to animate!</div>
+        
+        <div class="controls">
+            <button onclick="animateElement('slide')">Slide</button>
+            <button onclick="animateElement('spin')">Spin</button>
+            <button onclick="animateElement('bounce')">Bounce</button>
+            <button onclick="resetAnimation()">Reset</button>
+        </div>
+
+        <div class="card" id="card">
+            <div class="card-front">Front</div>
+            <div class="card-back">Back</div>
+        </div>
+        <button onclick="flipCard()">Flip Card</button>
+
+        <div class="loader" id="loader"></div>
+        <button onclick="toggleLoader()">Toggle Loader</button>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Modal Window</h3>
+                <p>This is a CSS animated modal!</p>
+            </div>
+        </div>
+        <button onclick="openModal()">Open Modal</button>
+
+        <div class="calculator">
+            <p>Calculator: <span id="result">0</span></p>
+            <button onclick="calculate(5, 10)">Add 5 + 10</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
